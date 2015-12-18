@@ -1,0 +1,71 @@
+/******************************
+GENERAL
+******************************/
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+/******************************
+HEADING
+******************************/
+
+
+#logo {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+}
+
+
+
+/******************************
+COLORS
+******************************/
+
+
+/* site body */
+
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+
+/* green header */
+
+header {
+  background: #6ab47b;
+  border-color:#599a68;
+}
+
+
+
+/* nav background on mobile */
+
+nav {
+  background: #599a68;
+}
+
+
+
+/* logo text */
+h1, h2 {
+  color: #fff;
+}
+
+
