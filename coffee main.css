@@ -1,0 +1,525 @@
+/***********************************************
+CODE FROM MONIQUE
+***********************************************/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Styles*/
+
+/********************************************
+GENERAL
+********************************************/
+
+body {
+	font-family: montserrat;
+	margin: 0px;
+	background-color: #d6d8d7;
+}
+
+h1 {
+	color: #1e1e1e;
+	text-transform: uppercase;
+	font-size: 72px;
+	line-height: 120px;
+}
+
+h2 {
+	color: #1e1e1e;
+	text-transform: uppercase;
+	font-size: 36px;
+}
+
+
+h3 {
+	color: #1e1e1e;
+	text-transform: uppercase;
+}
+
+
+h4 {
+	color: #1e1e1e;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+
+/* Get rid of blue highlight shadow around form fields */
+input:focus {outline:none;}
+
+
+/********************************************
+NAVIGATION STYLES
+********************************************/
+.logo {
+	float:left;
+	margin-left: 80px;
+	margin-top: 20px;
+}
+
+nav {
+	background-size: 100%;
+	height: 200px;
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.nav-list {
+	text-align: right;
+	margin-right: 80px;
+	margin-top: 50px;
+}
+
+.nav-list a {
+	text-decoration: none;
+}
+
+
+nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+
+nav a {
+  padding: 15px 12px;
+}
+
+/********************************************
+COLORS
+********************************************/
+
+/* link color */
+a {
+  color: #1e1e1e;
+}
+
+/* nav link color */
+.nav-list a, .nav-list a:visited {
+  color: #1e1e1e;
+}
+
+
+/* selected nav link color */
+.nav-list a.selected, .nav-list a:hover {
+  color: #caaa51;
+}
+
+footer {
+	background-color: #1e1e1e;
+}
+
+/********************************************
+HEADER
+********************************************/
+header {
+	background-image: url(LandingImage.jpg);
+	background-repeat: no-repeat;
+	min-height: 900px;
+       background-position: center;
+	text-align: center;
+      position: relative;
+      overflow: hidden;
+      display: block;
+
+
+
+}
+
+.header-text {
+	-webkit-transform: translate(-50%, -50%);
+	position: absolute;
+	top: 35%;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	letter-spacing: 2px;
+}
+
+.pre-text {
+margin-top: 100px;
+}
+
+.main-text {
+	letter-spacing: 2px
+	font-size:65px;
+      line-height: 80px;
+}
+
+/********************************************
+SPECIALS BLOCK
+********************************************/
+
+.specials-block{
+	background-image: url(beans.jpg);
+	background-repeat: no-repeat;
+      background-position: center;
+	height:100%;
+	width:100%;
+	text-align: center;
+}
+
+
+/* button style */
+.specials-block button {
+	background-color: #1e1e1e;
+	border: 2px solid #1e1e1e;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ebefed;
+	padding: 12px 40px;
+	font-size: 14px;
+	letter-spacing: 2px;
+	margin-bottom: 100px;
+	margin-top: 50px;
+}
+
+/* button style on hover */
+.specials-block button.selected, .specials-block button:hover {
+  background-color: #caaa51;
+  border-color: #caaa51;
+}
+
+
+	.oct-special {
+		font-size: 65px;
+		padding-top: 100px;
+		letter-spacing: 2px;
+	}
+
+
+	.pumpkin-spice {
+		font-size: 30px;
+		padding-top: 50px;
+		color: #caaa51;
+		letter-spacing: 2px;
+	}
+
+
+	.everyons-favorite {
+		padding-top: 30px;
+		padding-bottom: 20px;
+		line-height : 25px;
+		font-size: 18;
+	}
+
+
+/********************************************
+NEWSLETTER SECTION
+********************************************/
+.newsletter {
+	background-color: #caaa51;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+
+.newsletter-text {
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 100px;
+	background-color: #caaa51;
+	clear: left;
+	float: left;
+}
+
+
+.newsletter-form {
+	float: right;
+	margin-right: 100px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+.email-form-field {
+	border: none;
+  	border-bottom: solid 2px #FFFFFF;
+	float: left;
+	margin-right: 30px;
+	height: 40px;
+	padding-right: 280px;
+	background-color: #caaa51;
+	width: 180px;
+
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+    font-size: 16px;
+    line-height: 14px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+   font-size: 16px;
+   line-height: 14px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+   font-size: 16px;
+   line-height: 14px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+   font-size: 16px;
+   line-height: 14px;
+}
+
+/* button style */
+.newsletter button {
+	background-color: white;
+	border: 2px solid white;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #caaa51;
+	padding: 12px 32px;
+	font-size: 14px;
+	letter-spacing: 2px;
+	margin-right: 100px;
+}
+
+/* button style on hover */
+.newsletter button.selected, .newsletter button:hover {
+  background-color: #d6d8d7;
+  border-color: #d6d8d7;
+  color: white;
+}
+
+
+/********************************************
+CALENDAR SECTION
+********************************************/
+.event-block {
+	float: left;
+       background-image: url(OldTown.jpg);
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 50%;
+      display: inline-block;
+
+}
+
+/* OLD TOWN GRAND OPENING text block */
+.grand-opening-text {
+      padding-top: 80px;
+      padding-left: 80px;
+      padding-bottom: 413px;
+      font-size: 45px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+      letter-spacing: 2px;
+      line-height: 60px;
+}
+
+.date {
+  color: #caaa51;
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+/* COFFEE IN THE PARK text block */
+.coffee-park-text {
+	font-size: 30px;
+	font-weight: bold;
+	color: #FFFFFF;
+	letter-spacing: 2px;
+	margin-bottom: 50px;
+	line-height: 45px;
+	padding-top: 20px;
+}
+
+.coffee-park-date {
+	color: #caaa51;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.coffee-park-text-all {
+	float: left;
+	 background-color: #d6d8d7;
+	 padding-left: 30px;
+
+}
+
+.coffee-img1 {
+	float: right;
+	 background-color: #d6d8d7;
+	 width: 50%;
+
+}
+
+.event-blocks {
+	float: right;
+	width: 50%;
+}
+
+/* VIEW ALL EVENTS text block */
+
+.view-all-events-text {
+	font-size: 30px;
+	font-weight: bold;
+	color: #1e1e1e;
+	letter-spacing: 2px;
+	margin-bottom: 50px;
+	float: right;
+	padding-right: 190px;
+	padding-top: 20px;
+	line-height: 45px;
+	display: inline-block;
+	background-color: #d6d8d7;
+}
+
+
+.coffee-img2 {
+	width: 25%;
+}
+
+.event-blocks2 {
+
+}
+
+
+
+/********************************************
+LEARN FROM OUR BARISTAS
+********************************************/
+
+.barista {
+	background-color: #FFFFFF;
+	overflow: hidden;
+	width: 100%;
+
+}
+
+/* button style */
+.barista button {
+	background-color: #caaa51;
+	border: 2px solid #caaa51;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+	padding: 12px 40px;
+	font-size: 14px;
+	letter-spacing: 2px;
+      }
+
+      /* button style on hover */
+.barista button.selected, .barista button:hover {
+  background-color: #1e1e1e;
+  border-color: #1e1e1e;
+}
+
+.barista-image {
+	float: left;
+	margin-right: 100px;
+
+}
+
+.barista-text {
+	margin-right: 80px;
+  padding-top:  100px;
+}
+
+.barista-header {
+  margin-top: 15px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #1e1e1e;
+}
+
+.barista-body {
+    margin-top: 40px;
+    line-height: 30px;
+}
+
+.barista-button {
+  margin-top: 40px;
+}
+
+
+/********************************************
+FOOTER
+********************************************/
+footer {
+ 	background-color:  #1e1e1e;
+ 	display: inline-block;
+    	width: 100%;
+}
+
+.copyright-text {
+	color:  #FFFFFF;
+	margin-left: 80px;
+	padding-top: 30px;
+	font-size: 12px;
+	padding-bottom: 30px;
+	float: left;
+}
+
+.footer-list{
+	float: right;
+	margin-right: 80px;
+}
+
+.social-icon {
+	  width: 30px;
+	  height: 100%;
+	  margin: 20px  0 0 20px;
+}
+
+.icon {
+	display: inline-block;
+ }
