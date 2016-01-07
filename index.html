@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	<link rel="icon" href="images/demo_icon.png" type="image/gif" sizes="16x16">
 		<meta charset="utf-8">
 		<title>LaunchPad Lab Coffee Roasters</title>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-		<link href="main.css" type="text/css" rel="stylesheet" />
+		<link href="coffee main.css" type="text/css" rel="stylesheet" />
+             <link href="responsive.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
 		<nav>
-			<div class="logo"><img src="logo.png" alt="LaunchPad Lab Coffee Roasters" style="width:340px;height:90px;"></div>
-			<ul class="nav-list">
+			<img src="images/logo.png" class="logo" alt="LaunchPad Lab Coffee Roasters">
+                  <ul class="nav-list">
 				<li><a href="">About</a></li>
 				<li><a href="">Menu</a></li>
 				<li><a href="">Shop</a></li>
@@ -24,60 +26,59 @@
 		</header>
 
 		<section class="specials-block">
-			<h2><div class="oct-special">October Special</div></h2>
-			<h3><div class="pumpkin-spice">Pumpkin Spice Latte</div></h3>
-			<p><div class="everyons-favorite">Now serving everyone's favorite! It's not just a flavor pump. Our specialty includes<br> real pumpkin, simple syrup, organic African espresso and steamed milk.</div></p>
-			<button type="button">Visit Us</button>
+			<h2 class="special-text">October Special</h2>
+			<h3 class="special-text-secondary">Pumpkin Spice Latte</h3>
+			<p class="specials-p-text">Now serving everyone's favorite! It's not just a flavor pump. Our specialty includes<br> real pumpkin, simple syrup, organic African espresso and steamed milk.</p>
+			<a href="url" class="visit-us">Visit Us</a>
 		</section>
 
-
-		<section class= "newsletter">
-			<div class="newsletter-text"><p>Want all the latest news? Sign up for our newsletter.</p></div>
+		<section class="newsletter">
+			<p class="newsletter-text">Want all the latest news? Sign up for our newsletter.</p>
 			<div class="newsletter-form"><form action="http://www.example.com/subscribe.php">
-				<input type="text" class="email-form-field" name="email" placeholder="Your Email Address" />
+				<input type="text" class="email-form-field" name="email" placeholder="Your Email" />
 				<button type="button">Subscribe</button>
 			</form></div>
 		</section>
 
-
 		<section>
 			<div class="event-block">
-				<div class="grand-opening-text"><div class="grand-opening-text-styled"><p>Old Town<br>Grand<br>Opening</p></div>
-				<div class="date"><p>Oct 24</p></div></div>
+				<div class="grand-opening-text">
+					<p class="left-calendar-block-text">Old Town Grand Opening</p>
+					<p class="date-left">Oct 24<p>
+				</div>
 			</div>
 
-				<div class="event-blocks">
-					<div class="coffee-park-text-all">
-					<div class="coffee-park-text"><h3>Coffee In<br>The Park</h3></div>
-					 	<div class="coffee-park-date"><h3>Oct 27</h3></div></div>
-							<div class="coffee-img1"><img src="Coffee.jpg" alt="Coffee"></div>
-						</div>
+			<div class="top-calendar-text-block">
+				<div class="coffee-park-text-all">
+				<div class="coffee-park-text"><h3>Coffee In<br>The Park</h3></div>
+				 <div class="coffee-park-date"><h3>Oct 27</h3></div></div>
+			<img class="top-image" src="images/Coffee.jpg" alt="Coffee"></div>
 
 			<div class="event-blocks2">
-				<img src="Coffee2.jpg" class="coffee-img2" alt="Coffee">
-					<div class="view-all-events-text"><h3>View All<br>Events</h3></div>
-				</div>
+				<img src="images/Coffee2.jpg" class="coffee-img2" alt="Coffee">
+				<h3 class="view-all-events-text">View All<br>Events</h3>
+			</div>
 		</section>
 
 
-		<section class="barista">
-			<div class="barista">
-			<div class= "barista-image"><img src="Barista.jpg" alt="Barista" style="width:545px;height:520px;"></div>
-			<div class= "barista-text"><div class= "barista-header"><h3>Learn From The Best</h3></div>
-			<div class= "barista-body"><p>Our baristas are hand picked for their expert technique and dedication to good coffee. Once a month we offer a brewing class where you can learn all about our organically sourced coffee beans and get hands-on experience on how to perfect your favorite cup of joe behind the counter. Spaces fill up quickly, sign up now!</p></div>
-			<div class= "barista-button"><button type="button">Sign Up</button></div></div>
+		<section class="bottom-section">
+			<div class="left-justified-block">
+				<div class= "block-image"><img src="images/Barista.jpg" alt="Barista"></div>
+				<h3 class= "block-header">Learn From The Best</h3>
+				<p class="block-body-text">Our baristas are hand picked for their expert technique and dedication to good coffee. Once a month we offer a brewing class where you can learn all about our organically sourced coffee beans and get hands-on experience on how to perfect your favorite cup of joe behind the counter. Spaces fill up quickly, sign up now!</p>
+				<a href="url" class="sign-up">Sign Up</a>
+			</div>
 			</div>
 		</section>
 
 		<footer>
 			<div class="copyright-text"<p>© 2015 LaunchPad Lab Coffee Roasters | All Rights Reserved</p></div>
 				<ul class="footer-list">
-					<li class="icon"><a href="#" target="_blank"><img src="Facebook.png" alt="Facebook"  class="social-icon"></a></li>
-					<li class="icon"><a href="#" target="_blank"><img src="Instagram.png" alt="Instagram"  class="social-icon"></a></li>
-					<li class="icon"><a href="https://www.instagram.com/" target="_blank"><img src="Twitter.png" alt="Twitter" class="social-icon"></a></li>
+					<li class="icon" <a href="#" target="_blank"><img src="images/Facebook.png" alt="Facebook"  class="social-icon"></a></li>
+					<li class="icon" <a href="https://www.instagram.com/" target="_blank"><img src="images/Instagram.png" alt="Instagram"  class="social-icon"></a></li>
+					<li class="icon" <a href="https://www.twitter.com/" target="_blank"><img src="images/Twitter.png" alt="Twitter" class="social-icon"></a></li>
 				</ul>
 			</nav>
 		</footer>
-
-	</html>
-</body>
+	</body>
+</html>
