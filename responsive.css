@@ -1,0 +1,13 @@
+@media screen and (min-width: 480px) {
+
+
+}
+
+@media screen and (max-width: 660px) {
+
+    h1 {
+  font-size: 30px;
+  line-height: 30px;
+}
+  }
+
