@@ -1,12 +1,10 @@
 /***********************************************
 CODE FROM MONIQUE
 ***********************************************/
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,11 +50,9 @@ table {
 }
 
 /*Styles*/
-
 /********************************************
 GENERAL
 ********************************************/
-
 body {
       background-color: #ffffff;
 	font-family: montserrat;
@@ -66,6 +62,7 @@ body {
 h1, h2, h3, h4 {
     color: #1e1e1e;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 h1 {
@@ -181,7 +178,6 @@ header {
 
 .main-text {
       font-size: 65px;
-	letter-spacing: 2px;
       line-height: 80px;
 }
 
@@ -189,11 +185,12 @@ header {
 SPECIALS BLOCK
 ********************************************/
 .specials-block{
-	background-image: url(images/beans.jpg);
-      background-size: cover;
-	background-repeat: no-repeat;
-      background-position: center;
-	text-align: center;
+	 background-image: url(images/beans.jpg);
+       background-size: cover;
+	 background-repeat: no-repeat;
+       background-position: center;
+        text-align: center;
+        padding: 100px 350px;
 }
 
 /* link styled to be a button */
@@ -202,33 +199,26 @@ SPECIALS BLOCK
       color: #ebefed;
       display: inline-block;
 	font-weight: bold;
-      margin-bottom: 100px;
 	padding: 16px 44px;
 }
 
 /* link style on hover */
  a.visit-us:hover {
       background-color: #caaa51;
-
 }
 
 .special-text {
 	font-size: 65px;
-      letter-spacing: 2px;
-	padding-top: 100px;
 	}
-
 
 	.special-text-secondary {
              color: #caaa51;
 		font-size: 30px;
-             letter-spacing: 2px;
 		padding-top: 50px;
 	}
 
 .specials-p-text {
-      padding-top: 50px;
-      padding-bottom: 50px;
+      margin: 50px 0;
 }
 
 /********************************************
@@ -314,27 +304,28 @@ NEWSLETTER SECTION
 /********************************************
 CALENDAR SECTION
 ********************************************/
+.calendar {
+      background-color: #d6d8d7;
+}
 .event-block {
 	float: left;
-       background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/OldTown.jpg);
-      background-repeat: no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/OldTown.jpg) no-repeat;
       height: 100%;
       width: 50%;
       display: inline-block;
 }
 
 /* OLD TOWN GRAND OPENING text block */
-.grand-opening-text {
-      color: white;
-      font-size: 45px;
+.left-calendar-block-text-all {
       font-weight: bold;
-      letter-spacing: 2px;
       line-height: 100px;
-      padding: 80px 300px 413px 80px;
+      padding: 80px 0 413px 80px;
       text-transform: uppercase;
+      max-width: 300px;
 }
 
 .left-calendar-block-text {
+  color: #ffffff;
   font-size: 40px;
   line-height: 60px;
 }
@@ -346,28 +337,26 @@ CALENDAR SECTION
 }
 
 /* COFFEE IN THE PARK text block */
-
 .top-calendar-text {
       color: #FFFFFF;
 	font-size: 30px;
 	font-weight: bold;
-	letter-spacing: 2px;
 	line-height: 45px;
       margin-bottom: 50px;
 	padding-top: 20px;
 }
 
-
 .top-calendar-text-all {
         background-color: #d6d8d7;
 	 float: left;
 	 padding-left: 30px;
+        max-width: 250px;
 }
 
 .top-calendar-date {
-  color: #caaa51;
-  font-size: 24px;
-  font-weight: bold;
+      color: #caaa51;
+      font-size: 24px;
+      font-weight: bold;
 }
 
 .top-image {
@@ -382,7 +371,6 @@ CALENDAR SECTION
 }
 
 /* VIEW ALL EVENTS text block */
-
 .view-all-events-text {
        background-color: #d6d8d7;
        color: #1e1e1e;
@@ -390,9 +378,9 @@ CALENDAR SECTION
        float: right;
 	 font-size: 30px;
 	 font-weight: bold;
-	 letter-spacing: 2px;
        line-height: 45px;
 	 padding: 20px 170px 50px 0;
+        max-width: 150px;
 }
 
 .coffee-img2 {
@@ -402,11 +390,14 @@ CALENDAR SECTION
 /********************************************
 LEARN FROM OUR BARISTAS
 ********************************************/
-
 .left-justified-block {
 	background-color: #FFFFFF;
 	overflow: hidden;
 	width: 100%;
+}
+
+.text {
+  padding: 90px 70px;
 }
 
 /* button style */
@@ -415,7 +406,6 @@ LEARN FROM OUR BARISTAS
 	color: white;
       display: inline-block;
 	padding: 16px 44px;
-      margin-bottom: 50px;
       }
 
 /* link style on hover */
@@ -431,18 +421,15 @@ LEARN FROM OUR BARISTAS
 .block-header {
     color: #1e1e1e;
     font-size: 30px;
-    letter-spacing: 2px;
-    margin-top: 105px;
 }
 
 .block-body-text  {
-      padding: 50px 100px 50px 0;
+      padding: 50px 0;
 }
 
 /********************************************
 FOOTER
 ********************************************/
-
 footer {
  	background-color: #1e1e1e;
  	display: inline-block;
