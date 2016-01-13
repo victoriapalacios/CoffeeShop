@@ -75,7 +75,7 @@ h2 {
 }
 
 h4 {
-	font-size: 20px;
+	font-size: 1.5em;
 }
 
 p {
@@ -176,16 +176,27 @@ header {
 }
 
 .main-text {
-      font-size: 65px;
+      font-size: 4.2em;
 }
 
-/* responsive */
-@media screen and (max-width: 930px) {
-  .main-text {
-        line-height: 80px;
-        font-size: 50px;
+/* responsive*/
+@media screen and (max-width: 960px) {
+
+  body {
+    font-size: 70%;
+    margin: 0px;
   }
 }
+
+@media screen and (max-width: 460px) {
+
+  body {
+    font-size: 50%;
+    padding: 0px 0px;
+
+  }
+}
+
 
 /********************************************
 SPECIALS BLOCK
@@ -434,7 +445,7 @@ LEARN FROM OUR BARISTAS
 }
 
 .text {
-  padding: 90px 70px;
+  padding: 5em 3em;
 }
 
 /* button style */
@@ -464,6 +475,21 @@ LEARN FROM OUR BARISTAS
       padding: 50px 0;
 }
 
+/* responsive*/
+@media screen and (max-width: 1300px) {
+
+  .text {
+    padding: 3em 3em;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+
+  .block-image {
+    clear: right;
+  }
+}
+
 /********************************************
 FOOTER
 ********************************************/
@@ -476,7 +502,7 @@ footer {
 
 .copyright-text {
 	color:  #FFFFFF;
-      font-size: 12px;
+      font-size: .8em;
       float: left;
 	margin-left: 80px;
 	padding: 30px 0;
@@ -488,10 +514,43 @@ footer {
 }
 
 .social-icon {
-	  width: 30px;
+	  width: 2em;
 	  margin: 20px 0 0 20px;
 }
 
 .icon {
 	display: inline-block;
  }
+
+@media screen and (max-width: 620px) {
+
+  .social-icon {
+   float: none;
+    width: 60%;
+  -webkit-transform: translate(-50%, -50%);
+  position: center;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  padding-bottom: 10px;
+  }
+
+
+
+.copyright-text {
+  display: inline-block;
+  text-align: center;
+  margin: 0px 20px;
+}
+
+.footer-list {
+     float: none;
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+    margin-right: 0;
+
+}
+
+}
+
