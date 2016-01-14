@@ -123,12 +123,35 @@ nav a {
   padding: 15px 12px;
 }
 
+.mobile-nav{
+  display: none;
+}
+
 /* responsive*/
 @media screen and (max-width: 960px) {
 .logo {
-  width: 200px;
+  width: 250px;
+}
+
+.nav-list {
+  /*display: none;*/
+}
+
+.nav-list li {
+  background-color: #d6d8d7;
+  display: block;
+  padding: 25px 0;
+  margin: 0;
+  text-align: center;
+}
+
+.mobile-nav{
+  display: block;
+  float: right;
+  padding-right: 20px;
 }
 }
+
 /********************************************
 COLORS
 ********************************************/
