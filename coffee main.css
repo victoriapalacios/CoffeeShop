@@ -269,7 +269,7 @@ SPECIALS BLOCK
 
 @media screen and (max-width: 775px) {
   .specials-block {
-        padding: 100px 10px;
+        padding: 50px 10px;
         text-align: center;
   }
 
@@ -282,7 +282,7 @@ SPECIALS BLOCK
   }
 
   .specials-p-text {
-      margin: 50px 10px;
+      margin: 50px 30px;
 }
 }
 
@@ -403,98 +403,90 @@ NEWSLETTER SECTION
 .newsletter button {
   margin-top: 50px;
 }
+
+/*
+.newsletter-text {
+  display: inline-block;
+  text-align: center;
+max-width: 300px;
+}
+*/
 }
 /********************************************
 CALENDAR SECTION
 ********************************************/
-.calendar {
-      background-color: #d6d8d7;
-      height: 735px;
-}
-.event-block {
-	float: left;
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/OldTown.jpg) no-repeat;
-      height: 100%;
-      width: 50%;
-      display: inline-block;
+body { margin:0; }
+
+img{
+  vertical-align: top;
 }
 
-/* OLD TOWN GRAND OPENING text block */
-.left-calendar-block-text-all {
-      font-weight: bold;
-      line-height: 100px;
-      padding: 80px 0 413px 80px;
-      text-transform: uppercase;
-      max-width: 300px;
+.main-event img{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  float: left;
+  width: 50%;
 }
 
-.left-calendar-block-text {
+.calendar-text {
   color: #ffffff;
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 30px;
+  line-height: 50px;
+  max-width: 200px;
+  margin: 30px 0 0 30px;
 }
 
-.date-left {
+.calendar-date {
       color: #caaa51;
-      font-size: 30px;
+      font-size: 20px;
       padding-top: 30px;
+      margin-left: 30px;
 }
 
-/* COFFEE IN THE PARK text block */
-.top-calendar-text {
-      color: #FFFFFF;
-	font-size: 30px;
-	font-weight: bold;
-	line-height: 45px;
-      margin-bottom: 50px;
-	padding-top: 20px;
+.secondary-events{
+  background-color: #d6d8d7;
+  float: left;
+  width: 50%;
 }
 
-.top-calendar-text-all {
-        background-color: #d6d8d7;
-	 float: left;
-	 padding-left: 30px;
-        max-width: 250px;
+.event-text{
+  float: left;
+  width: 50%;
 }
 
-.top-calendar-date {
-      color: #caaa51;
-      font-size: 24px;
-      font-weight: bold;
+.event-2 .event-text{
+  float: right;
 }
 
-.top-image {
-       background-color: #d6d8d7;
-	 float: right;
-	 width: 50%;
-      position: relative;
-      overflow: hidden;
+.event-image{
+  width: 50%;
 }
 
-.top-calendar-text-block {
-	float: right;
-	width: 50%;
+@media screen and (max-width: 950px) {
+  .calendar-text {
+  font-size: 20px;
+  line-height: 30px;
 }
 
-/* VIEW ALL EVENTS text block */
-.view-all-events-text {
-       background-color: #d6d8d7;
-       color: #1e1e1e;
-       display: inline-block;
-       float: right;
-	 font-size: 30px;
-	 font-weight: bold;
-       line-height: 45px;
-	 padding: 20px 170px 50px 0;
-        max-width: 150px;
+.calendar-dates {
+  font-size: 10px;
+  line-height: 10px;
 }
 
-.coffee-img2 {
-	width: 25%;
-        position: relative;
-      overflow: hidden;
-
 }
+
+@media screen and (max-width: 700px) {
+
+.secondary-events {
+  clear: left;
+  width: 100%;
+}
+
+.main-event img{
+  width: 100%;
+}
+}
+
+
 
 /********************************************
 LEARN FROM OUR BARISTAS

@@ -8,13 +8,46 @@
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link href="coffee main.css" type="text/css" rel="stylesheet" />
 		<link href="responsive.css" type="text/css" rel="stylesheet" />
+            <script type="text/javascript">
+                          function toggleMe(a){
+                            var e=document.getElementById(a);
+                                 if(e.style.display=="none"){
+                                e.style.display="block"
+                            }
+                        else{
+
+                                e.style.display="none"
+                            }
+                            return true;
+                        }
+      </script>
+
+
+<script type="text/javascript">
+/* JavaScript Media Queries */
+if (matchMedia) {
+  var mq = window.matchMedia("(min-width: 960px)");
+  mq.addListener(WidthChange);
+  WidthChange(mq);
+}
+
+// media query change
+function WidthChange(mq) {
+
+  var msg = (mq.matches ? "more" : "less") + " than 960 pixels";
+  var e=document.getElementById("para1");
+  e.style.display="none"
+
+}
+</script>
 	</head>
 	<body>
 		<nav>
 			<div class="nav-content">
 				<img src="images/logo.png" class="logo" alt="LaunchPad Lab Coffee Roasters">
-					<img src="images/menu.png" class="mobile-nav" alt="Menu">
-                 			 <ul class="nav-list">
+                             <input type="image" class="mobile-nav" value="Toggle" src="images/menu.png" onclick="return toggleMe('para1')" id="para1_img" alt="Menu" class="mobile-nav">
+
+                 			 <ul class="nav-list" id="para1">
 						<li><a href="#">About</a></li>
 						<li><a href="#">Menu</a></li>
 						<li><a href="#">Shop</a></li>
@@ -35,7 +68,6 @@
 			<p class="specials-p-text">Now serving everyone's favorite! It's not just a flavor pump. Our specialty includes real pumpkin, simple syrup, organic African espresso and steamed milk.</p>
 			<a href="url" class="visit-us">Visit Us</a>
 		</section>
-
 		<section class="newsletter">
 			<p class="newsletter-text">Want all the latest news? Sign up for our newsletter.</p>
 			<div class="newsletter-form"><form action="http://www.example.com/subscribe.php">
@@ -43,27 +75,28 @@
 				<button type="button">Subscribe</button>
 			</form></div>
 		</section>
+		  <section class="calendar-container">
+      <div class="main-event">
+         <img src="images/OldTown.jpg" alt="NewLocation" />
+      </div>
+      <div class="secondary-events">
+        <div class="event-1">
+          <div class="event-text">
+            <h3 class="calendar-text">Coffee In The Park</h3>
+             <h3 class="calendar-date">Oct 27</h3>
+          </div>
+           <img src="images/coffee.jpg" alt="top-image" class="event-image"/>
 
-		<section class="calendar">
-			<div class="event-block">
-				<div class="left-calendar-block-text-all">
-					<h3 class="left-calendar-block-text">Old Town Grand Opening</h3>
-					<p class="date-left">Oct 24<p>
-				</div>
-			</div>
-
-			<div class="top-calendar-text-block">
-				<div class="top-calendar-text-all">
-				<div class="top-calendar-text"><h3>Coffee In The Park</h3></div>
-				 <div class="top-calendar-date"><h3>Oct 27</h3></div></div>
-			<img src="images/Coffee.jpg" class="top-image" alt="Coffee"></div>
-
-			<div class="event-blocks2">
-				<img src="images/Coffee2.jpg" class="coffee-img2" alt="Coffee">
-				<h3 class="view-all-events-text">View All Events</h3>
-			</div>
-              </div>
-		</section>
+        </div>
+        <div class="event-2">
+          <img src="images/coffee2.jpg" alt="bottom-image" class="event-image"/>
+          <div class="event-text">
+             <h3 class="calendar-text">See All Events</h3>
+             <h3 class="calendar-date">October</h3>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 		<section class="callout-section">
