@@ -137,6 +137,7 @@ nav a {
 }
 
 .nav-list {
+      width: 100%;
   /*display: none;*/
 }
 
@@ -146,7 +147,7 @@ nav a {
   padding: 25px 0;
   margin: 0;
   text-align: center;
-    width: 100%;
+  width: 100%;
   height: 100%;
 }
 
@@ -156,6 +157,7 @@ nav a {
   padding-right: 20px;
   margin-bottom: 20px;
 }
+
 }
 
 /********************************************
@@ -237,8 +239,6 @@ header {
 }
 }
 
-
-
 /********************************************
 SPECIALS BLOCK
 ********************************************/
@@ -287,7 +287,18 @@ SPECIALS BLOCK
   }
 }
 
+
+@media screen and (max-width: 600px) {
+
+.specials-block {
+  background-image: url(images/beans-responsive.jpg);
+  background-position: right;
+   }
+ }
+
+
 @media screen and (max-width: 775px) {
+
   .specials-block {
         padding: 50px 10px;
         text-align: center;
@@ -305,7 +316,6 @@ SPECIALS BLOCK
       margin: 50px 30px;
 }
 }
-
 
 
 /********************************************
@@ -444,17 +454,47 @@ img{
 .main-event-text{
   font-weight: bold;
   color: #ffffff;
+  position: absolute;
+  max-width: 400px;
+  line-height: 70px;
+  padding: 40px;
+  z-index: 1;
+  font-size: 50px;
+}
+
+.main-event {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  float: left;
+  height: 100%;
 }
 
 .main-event img{
   float: left;
-  width: 50%;
+  width: 100%;
 }
 
-#overlay {  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-               opacity:4;
-               -webkit-transition: opacity
-               }
+.overlay {
+   position: absolute;
+    z-index: 1;
+    height: 100%;
+    left: 0;
+    width: 100%;
+ }
+
+.overlay:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1e1e1e;
+    z-index: -1;
+    opacity: .7;
+    content: "";
+    display: block;
+}
 
 .calendar-text {
   color: #ffffff;
@@ -501,16 +541,39 @@ img{
   line-height: 10px;
 }
 
+@media screen and (max-width: 800px) {
+.main-event-text{
+  font-weight: bold;
+  color: #ffffff;
+  position: absolute;
+  max-width: 200px;
+  line-height: 50px;
+  padding: 40px;
+  z-index: 1;
+  font-size: 30px;
+}
+}
+
 }
 
 @media screen and (max-width: 700px) {
+
+  .main-event-text{
+  font-size: 40px;
+  max-width: 300px;
+    line-height: 60px;
+}
 
 .secondary-events {
   clear: left;
   width: 100%;
 }
 
-.main-event img{
+.main-event {
+    width: 100%;
+}
+
+.main-event img {
   width: 100%;
 }
 }
